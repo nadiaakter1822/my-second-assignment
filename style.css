@@ -3,8 +3,6 @@
     background-color: #f5f8ff;
 }
 
-
-
 // <weight>: Use a value from 100 to 900
 // <uniquifier>: Use a unique and descriptive class name
 
@@ -14,6 +12,19 @@
   font-weight: <weight>;
   font-style: normal;
 }
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.noto-serif-<uniquifier> {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 
 
 .all-header{
@@ -64,7 +75,32 @@
     font-family: "Inter", sans-serif;
 }
 
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 150px;
+    padding: 120px 50px;
+}
 
+.first-heading{
+    color: #000000;
+    font-family: "Noto Serif", serif;
+    font-size: 65px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.color-line{
+    color: #E95A08;
+}
+
+.first-paragraph{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    padding-right: 300px;
+}
 
 @media screen and (max-width: 576px) {
     .nav {
