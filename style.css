@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    background-color: #f5f8ff;
+}
+
+
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+.all-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 200px;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav {
+    margin-left: auto;
+    padding-right: 30px;
+}
+.nav ul li{
+    display: inline;
+    padding-left: 25px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+}
+
+.nav ul li a{
+    color: #8987A1;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: #252432;
+    font-weight: 600;
+}
+
+.nav .active {
+    color: #252432;
+    font-weight: 600;
+
+}
+
+.cart i {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.cart p {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .nav {
+        display: none;
+    }
+    .logo img,
+    .cart {
+        display: inline-block;
+    }
+
+    .logo img{
+        width: 60%;
+    }
+    .all-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+    align-items: center;
+
+    }
+
+}
